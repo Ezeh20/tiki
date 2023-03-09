@@ -1,0 +1,65 @@
+.cta {
+    background: #ca9cf0;
+    padding-top: 2rem;
+
+    .cta_top {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+
+        .cta_title {
+            color: #fff;
+            font-weight: 900;
+
+            @media screen and (min-width: 768px) {
+                font-size: 24px;
+            }
+        }
+
+        .cta_content {
+            color: rgba(0, 0, 0, .4);
+
+            @media screen and (min-width: 768px) {
+                font-size: 17px;
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            column-gap: 2rem;
+            margin-top: 1rem;
+
+            .button {
+                background-color: #8e42cc;
+                width: 110px;
+                padding: .8rem 1rem;
+                border-radius: 5px;
+                font-size: 14px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .button2{
+                background-color: transparent;
+                border: 1px solid #8e42cc;
+                color: #8e42cc;
+            }
+        }
+    }
+
+    .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .ctaImg {
+            width: 300px;
+            @media screen and (min-width: 768px) {
+               width: 400px;
+            }
+        }
+    }
+}

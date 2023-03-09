@@ -1,0 +1,75 @@
+.footer {
+    background-color: blueviolet;
+    margin-top: 2rem;
+    padding-block: 2rem;
+    @media screen and (min-width:7680px) {
+        padding-block: 4rem;
+    }
+
+    .footerContent {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+        row-gap: 3rem;
+        @media screen and (min-width:600px) {
+            flex-direction: row;
+            padding-block: 3rem;
+        }
+        
+
+        .logo {
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            color: #f1ecec;
+            @media screen and (min-width:425px) {
+                flex-direction: row;
+                justify-content: space-between;
+                background: rgb(120, 39, 197);
+                column-gap: 2rem;
+                padding: 1rem;
+            }
+            @media screen and (min-width:768px) {
+                background: transparent;
+                column-gap: 5rem;
+                padding: 0;
+            }
+
+            .linkslink {
+                display: flex;
+                flex-direction: column;
+                row-gap: .5rem;
+
+                .linksHeader {
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+
+            .linksHeader2 {
+                color: #fff;
+                font-weight: 600;
+
+            }
+        }
+        .btn{
+            align-self: flex-start;
+            justify-self: flex-start;
+            padding: 1rem;
+            background-color: #fff;
+            color: blueviolet;
+            font-weight: 600;
+            border-radius: 5px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
